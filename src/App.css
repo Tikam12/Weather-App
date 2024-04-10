@@ -1,0 +1,56 @@
+/* Base styles */
+ .bg-slate-800 {
+    background-color: #1f2937;
+  }
+  
+  .text-slate-200 {
+    color: #e5e7eb;
+  }
+  
+  .text-slate-400 {
+    color: #94a3b8;
+  }
+  
+  .text-slate-600 {
+    color: #6b7280;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 640px) {
+    .max-w-container {
+      max-width: 100%;
+      padding: 0 1rem;
+    }
+  
+    .grid-cols-2 {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  
+    .text-2xl {
+      font-size: 1.5rem;
+    }
+  
+    .text-xl {
+      font-size: 1.25rem;
+    }
+  
+    .text-lg {
+      font-size: 1.125rem;
+    }
+  
+    .text-md {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Laptop styles */
+  @media (min-width: 768px) {
+    .max-w-container {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+  
+    .grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }

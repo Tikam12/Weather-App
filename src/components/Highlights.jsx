@@ -2,7 +2,7 @@ import React from "react";
 
 function Highlights({ stats }) {
   return (
-    <div className="bg-slate-600 p-2 text-slate-200 flex flex-col justify-start items-center text-transform scale-100 hover:scale-110 transition-transform duration-300 ease-in-out">
+    <div className="bg-slate-700 rounded-lg p-2 text-slate-200 flex flex-col justify-start items-center text-transform scale-100 hover:scale-110 transition-transform duration-300 ease-in-out">
       <h2 className="text-sm mt-2">{stats.title}</h2>
       <div className="mt-2">
         {" "}

@@ -39,8 +39,8 @@ function App() {
   }, [iconClicked, city]); // Include city in the dependency array to trigger API call when city changes
 
   return (
-    <div className="bg-slate-800 h-screen flex justify-center items-start">
-      <div className="w-1/5 h-1/3 mt-40">
+    <div className="bg-slate-800 h-screen flex justify-center items-start ">
+      <div className="w-1/3 h-1/3 mt-40 rounded-lg text-slate-200">
         {weatherData && (
           <Temprature
             setCity={setCity}
@@ -55,8 +55,9 @@ function App() {
           />
         )}
       </div>
-      <div className="w-1/3 h-1/3 mt-40 p-10 grid grid-cols-2 gap-6 ">
-        <h1 className="text-slate-200 text-2xl col-span-2">
+
+      <div className="w-1/3 h mt-40 p-10 grid grid-cols-2 gap-6 bg-slate-600  rounded-lg text-slate-200">
+        <h1 className="text-slate-200 text-2xl col-span-2 bg-slate-600 p-4 rounded-lg ">
           Today's Highlights
         </h1>
         {weatherData && (

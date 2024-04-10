@@ -10,11 +10,11 @@ function Temprature({ setCity, stats, setIconClicked }) {
   };
 
   return (
-    <>
+    <div className="temperature-container bg-slate-600 p-6 mr-10 rounded-lg text-slate-200">
       <div className="flex align-middle justify-center">
         <input
           type="text"
-          className="bg-slate-600 border border-slate-500 text-slate-200 placeholder-slate-400 text-md focus:border-slate-100 block w-60 p-2 focus:outline-none"
+          className="bg-slate-700 rounded-lg border border-slate-500 text-slate-200 placeholder-slate-400 text-md focus:border-slate-100 block w-80 p-2 ml-5 focus:outline-none"
           placeholder="Enter Your City Name"
           onChange={handleCityChange}
           defaultValue="New Delhi"
@@ -79,7 +79,7 @@ function Temprature({ setCity, stats, setIconClicked }) {
       <div className="flex justify-center text-slate-400 mt-5 text-[15px]">
         Today &#183; {stats.time} | {stats.location}
       </div>
-    </>
+    </div>
   );
 }
 
